@@ -532,7 +532,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 inPutb = Double.parseDouble(String.valueOf(InPutText.getText()));
                 outPut = inPutb * -1;
 
-                if (outPut > -1000000000 && outPut < 100000000) {
+                if (outPut > -Double.MAX_VALUE && outPut < Double.MAX_VALUE) {
                     InPutText.setText(String.valueOf(outPut));
                     OutPutText.setText(String.valueOf(outPut));
                 }
@@ -592,7 +592,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 inPutb=Double.parseDouble(String.valueOf(InPutText.getText()));
                 outPut=1 / inPutb;
 
-                if (outPut > -1000000000 && outPut < 100000000) {
+                if (outPut > -Double.MAX_VALUE && outPut < Double.MAX_VALUE) {
                     InPutText.setText(String.valueOf(outPut));
                 }
                 else
@@ -619,7 +619,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 }
                 if(operator=="pi")
                 {
-                    total=(total*22/7);
+                    total=(total*Math.PI);
                     InPutText.setText(String.valueOf(total));
 
                 }
@@ -654,7 +654,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     total=total-Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
                 }
-                total=total*3.14159265;
+                total=total*Math.PI;
                 InPutText.setText(String.valueOf(total));
                 state="op";
 
@@ -670,7 +670,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 inPutb=Double.parseDouble(String.valueOf(InPutText.getText()));
                 outPut=inPutb*inPutb;
 
-                if (outPut > -1000000000 && outPut < 100000000) {
+                if (outPut > -Double.MAX_VALUE && outPut < Double.MAX_VALUE) {
                     InPutText.setText(String.valueOf(outPut));
                 }
                 else
@@ -708,7 +708,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 inPutb=Double.parseDouble(String.valueOf(InPutText.getText()));
                 outPut=inPutb*inPutb*inPutb;
 
-                if (outPut > -1000000000 && outPut < 100000000) {
+                if (outPut > -Double.MAX_VALUE && outPut < Double.MAX_VALUE) {
                     InPutText.setText(String.valueOf(outPut));
                 }
                 else
@@ -752,7 +752,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 }
                 if(operator=="pi")
                 {
-                    total=(total*22/7);
+                    total=(total*Math.PI);
                     InPutText.setText(String.valueOf(total));
 
                 }
@@ -808,7 +808,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 }
                 if(operator=="pi")
                 {
-                    total=(total*22/7);
+                    total=(total*Math.PI);
                     InPutText.setText(String.valueOf(total));
 
                 }
@@ -861,7 +861,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 }
                 if(operator=="pi")
                 {
-                    total=(total*22/7);
+                    total=(total*Math.PI);
                     InPutText.setText(String.valueOf(total));
 
                 }
@@ -1209,7 +1209,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 }
                 if(operator=="pi")
                 {
-                    total=(total*22/7);
+                    total=(total*Math.PI);
                     InPutText.setText(String.valueOf(total));
                 }
                 if(operator=="%")
@@ -1251,7 +1251,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 }
                 if(operator=="pi")
                 {
-                    total=(total*22/7);
+                    total=(total*Math.PI);
                     InPutText.setText(String.valueOf(total));
                 }
 
@@ -1300,7 +1300,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 }
                 if(operator=="pi")
                 {
-                    total=(total*22/7);
+                    total=(total*Math.PI);
                     InPutText.setText(String.valueOf(total));
 
                 }
@@ -1512,8 +1512,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     int num = (Integer.parseInt(InPutText.getText(), 16));
                     InPutText.setText(Integer.toBinaryString(num));
-
-
                 }
 
                 if(comboBox2.getSelectedItem()=="Hexadecimal"&&comboBox3.getSelectedItem()=="Octal")
