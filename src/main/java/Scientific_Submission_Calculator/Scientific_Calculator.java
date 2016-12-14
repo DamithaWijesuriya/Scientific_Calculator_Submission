@@ -120,9 +120,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
     private String formula_state;
 
 
-
-
-
     private static final ArrayList<Character> DIVIDERS = new ArrayList<Character>
             (Arrays.asList('*', '/', '-', '+'));
     private static final int RIGHT_DIRECTION = 1;
@@ -294,23 +291,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
         return expression;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static boolean hasPrecedence(char op1, char op2) {
         if (op2 == '(' || op2 == ')')
             return false;
@@ -335,8 +315,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
         }
         return 0;
     }
-
-
     public static double add(double a,double b)
     {
         double result =a+b;
@@ -397,9 +375,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
             }
                 InPutText.setText(InPutText.getText()+"1");
                 OutPutText.setText(OutPutText.getText() + "1");
-
-
-
             }
         });
         TwoBtn.addActionListener(new ActionListener() {
@@ -544,7 +519,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(InPutText.getText() + ".");
                     Decdisp=true;
                 }
-
             }
         });
 
@@ -580,9 +554,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
                 InPutText.setText("");
-
-
-
             }
         });
 
@@ -600,8 +571,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-
-
                 InPutText.setText("");
               OutPutText.setText("");
               total=0;
@@ -609,14 +578,8 @@ public class Scientific_Calculator extends javax.swing.JFrame{
               expresion="cl";
               operator="op";
               error.setText("");
-
-
-
-
             }
         });
-
-
 
         OneOverXBtn.addActionListener(new ActionListener() {
             /**
@@ -650,11 +613,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
                 OutPutText.setText(OutPutText.getText() + "π");
-
-
-
-
-
                 if(total==0)
                 {
                     total=Double.parseDouble(InPutText.getText());
@@ -695,18 +653,14 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     total=total-Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
-
                 total=total*3.14159265;
                 InPutText.setText(String.valueOf(total));
-
-
                 state="op";
 
             }
         });
-        XToPowerTwoBtn.addActionListener(new ActionListener() {
+                XToPowerTwoBtn.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              *
@@ -742,7 +696,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 OutPutText.setText("√ "+String.valueOf(inPutb) );
                 outPut=0;
                 op=0;
-
             }
         });
         XToPowerThreeBtn.addActionListener(new ActionListener() {
@@ -767,7 +720,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 op=0;
             }
         });
-        ThreeSqRtXBtn.addActionListener(new ActionListener() {
+                ThreeSqRtXBtn.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              *
@@ -781,8 +734,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 OutPutText.setText("³√ "+String.valueOf(inPutb) );
                 outPut=0;
                 op=0;
-
-
             }
         });
 
@@ -795,8 +746,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
                 OutPutText.setText(OutPutText.getText() + "Sin");
-
-
                 if(total==0)
                 {
                     total=Double.parseDouble(InPutText.getText());
@@ -814,7 +763,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(String.valueOf(total));
 
                 }
-
                 if(operator=="+")
                 {
                     total=total+Double.parseDouble(InPutText.getText());
@@ -839,12 +787,8 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(String.valueOf(total));
 
                 }
-
-
                 total=Math.toRadians(Double.parseDouble(InPutText.getText()));
                 InPutText.setText(String.valueOf(total));
-
-
 
             }
         });
@@ -875,7 +819,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(String.valueOf(total));
 
                 }
-
                 if(operator=="+")
                 {
                     total=total+Double.parseDouble(InPutText.getText());
@@ -898,10 +841,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     total=total-Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
-
-
                 total=Math.cos(Math.toRadians(Double.parseDouble(InPutText.getText())));
                 InPutText.setText(String.valueOf(total));
 
@@ -915,8 +855,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
                 OutPutText.setText(OutPutText.getText() + "tan");
-
-
                 if(total==0)
                 {
                     total=Double.parseDouble(InPutText.getText());
@@ -927,14 +865,12 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(String.valueOf(total));
 
                 }
-
                 if(operator=="%")
                 {
                     total=(total*Double.parseDouble(InPutText.getText()))/100;
                     InPutText.setText(String.valueOf(total));
 
                 }
-
                 if(operator=="+")
                 {
                     total=total+Double.parseDouble(InPutText.getText());
@@ -957,10 +893,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     total=total-Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
-
-
                 total=Math.tan(Math.toRadians(Double.parseDouble(InPutText.getText())));
                 InPutText.setText(String.valueOf(total));
             }
@@ -974,63 +907,36 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
 
-
                 OutPutText.setText(OutPutText.getText() + "+");
-
-
-
-
-
-
-
-
                 if(expresion=="cl") {
 
                     if (total == 0) {
                         total = Double.parseDouble(InPutText.getText());
                     }
-
-
                     if (operator == "%") {
                         total = (total * Double.parseDouble(InPutText.getText())) / 100;
                         InPutText.setText(String.valueOf(total));
-
                     }
 
                     if (operator == "+") {
-
-
                         total = total + Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
-
                     }
                     if (operator == "*") {
                         total = total * Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
                     if (operator == "/") {
                         total = total / Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
                     if (operator == "-") {
                         total = total - Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
-
-
                     operator = "+";
                     state = "op";
-
-
-
                 }
-
-
-
             }
         });
         SubstractionBtn.addActionListener(new ActionListener() {
@@ -1040,28 +946,16 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              * @param e
              */
             public void actionPerformed(ActionEvent e) {
-
-
-
                 OutPutText.setText(OutPutText.getText() + "-");
-
-
-
-
-
                 if(expresion=="cl") {
 
                     if (total == 0) {
                         total = Double.parseDouble(InPutText.getText());
                     }
-
-
                     if (operator == "%") {
                         total = (total * Double.parseDouble(InPutText.getText())) / 100;
                         InPutText.setText(String.valueOf(total));
-
                     }
-
                     if (operator == "+") {
 
                         total = total + Double.parseDouble(InPutText.getText());
@@ -1082,15 +976,10 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     if (operator == "-") {
                         total = total - Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
-
-
                     operator = "-";
                     state = "op";
-
-
-                }
+               }
 
 
             }
@@ -1103,56 +992,35 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
 
-
                 OutPutText.setText(OutPutText.getText() + "*");
-
-
-
-
 
                 if(expresion=="cl") {
 
                     if (total == 0) {
                         total = Double.parseDouble(InPutText.getText());
                     }
-
-
                     if (operator == "%") {
                         total = (total * Double.parseDouble(InPutText.getText())) / 100;
                         InPutText.setText(String.valueOf(total));
-
                     }
-
                     if (operator == "+") {
-
-
                         total = total + Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
-
                     }
                     if (operator == "*") {
                         total = total * Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
                     if (operator == "/") {
                         total = total / Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
                     if (operator == "-") {
                         total = total - Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
-
-
                     operator = "*";
                     state = "op";
-
-
-
                 }
             }
         });
@@ -1164,57 +1032,36 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              * @param e
              */
             public void actionPerformed(ActionEvent e) {
-
-
                 OutPutText.setText(OutPutText.getText() + "/");
-
-
-
-
-
                 if(expresion=="cl") {
 
                     if (total == 0) {
                         total = Double.parseDouble(InPutText.getText());
                     }
-
-
                     if (operator == "%") {
                         total = (total * Double.parseDouble(InPutText.getText())) / 100;
                         InPutText.setText(String.valueOf(total));
-
                     }
 
                     if (operator == "+") {
-
-
                         total = total + Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
 
                     }
                     if (operator == "*") {
                         total = total * Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
                     if (operator == "/") {
                         total = total / Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
                     if (operator == "-") {
                         total = total - Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
-
-
                     operator = "/";
                     state = "op";
-
-
-
                 }
             }
         });
@@ -1225,34 +1072,21 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              * @param e
              */
             public void actionPerformed(ActionEvent e) {
-
-
                 OutPutText.setText(OutPutText.getText() + "%");
-
-
-
-
 
                 if(expresion=="cl") {
 
                     if (total == 0) {
                         total = Double.parseDouble(InPutText.getText());
                     }
-
-
                     if (operator == "%") {
                         total = (total * Double.parseDouble(InPutText.getText())) / 100;
                         InPutText.setText(String.valueOf(total));
-
                     }
 
                     if (operator == "+") {
-
-
                         total = total + Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
-
                     }
                     if (operator == "*") {
                         total = total * Double.parseDouble(InPutText.getText());
@@ -1267,17 +1101,10 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     if (operator == "-") {
                         total = total - Double.parseDouble(InPutText.getText());
                         InPutText.setText(String.valueOf(total));
-
                     }
-
-
                     operator = "%";
                     state = "op";
-
-
-
                 }
-
             }
         });
         EqualBtn.addActionListener(new ActionListener() {
@@ -1288,38 +1115,24 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
 
-
-
-
                 if(excount==0&&expresion=="op")
                 {
                 operator="";
                 total=Double.parseDouble(calc(OutPutText.getText()));
                     InPutText.setText(Double.toString(total));
                     expresion="cl";
-
                 }
-
-
-
                 if (total == 0) {
                     total = Double.parseDouble(InPutText.getText());
                 }
-
-
                 if (operator == "%") {
                     total = (total * Double.parseDouble(InPutText.getText())) / 100;
                     InPutText.setText(String.valueOf(total));
-
                 }
 
                 if (operator == "+") {
-
-
                     total = total + Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
-
                 }
                 if (operator == "*") {
                     total = total * Double.parseDouble(InPutText.getText());
@@ -1329,14 +1142,11 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 if (operator == "/") {
                     total = total / Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
                 if (operator == "-") {
                     total = total - Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
-
                 if(powerstate=="open")
                 {
                     double a= Math.pow(powerx,Double.parseDouble(InPutText.getText()));
@@ -1345,7 +1155,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     total=total+a;
                     total=Double.parseDouble(InPutText.getText());
                 }
-
                 if(npstate=="C")
                 {
                     double n = nvalue;
@@ -1353,20 +1162,16 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     for (int i = 1; i <= n; i++) {
                         resultn = resultn * i;
                     }
-
                     double r = Double.parseDouble(InPutText.getText());
                     int resultr = 1;
                     for (int i = 1; i <= r; i++) {
                         resultr = resultr * i;
                     }
-
                    double a= ((resultn-resultr)*resultr);
                     a=resultn/a;
                     npstate="";
                     InPutText.setText(Double.toString(a));
                     total=a;
-
-
                 }
 
                 if(npstate=="P")
@@ -1376,25 +1181,17 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     for (int i = 1; i <= n; i++) {
                         resultn = resultn * i;
                     }
-
                     double r = Double.parseDouble(InPutText.getText());
                     int resultr = 1;
                     for (int i = 1; i <= r; i++) {
                         resultr = resultr * i;
                     }
-
                     double a= resultn/((resultn-resultr));
 
                     npstate="";
                     InPutText.setText(Double.toString(a));
-
-
-
                 }
                 operator="";
-
-
-
             }
         });
         OneBtn.addActionListener(new ActionListener() {
@@ -1406,8 +1203,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
         AsinBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 OutPutText.setText(OutPutText.getText() + "Asin");
-
-
                 if(total==0)
                 {
                     total=Double.parseDouble(InPutText.getText());
@@ -1416,27 +1211,21 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     total=(total*22/7);
                     InPutText.setText(String.valueOf(total));
-
                 }
-
                 if(operator=="%")
                 {
                     total=(total*Double.parseDouble(InPutText.getText()))/100;
                     InPutText.setText(String.valueOf(total));
-
                 }
-
                 if(operator=="+")
                 {
                     total=total+Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
                 if(operator=="*")
                 {
                     total=total*Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
                 if(operator=="/")
                 {
@@ -1448,10 +1237,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     total=total-Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
-
-
                 total=Math.asin(Math.toRadians(Double.parseDouble(InPutText.getText())));
                 InPutText.setText(String.valueOf(total));
             }
@@ -1459,8 +1245,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
         AcosBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 OutPutText.setText(OutPutText.getText() + "acos");
-
-
                 if(total==0)
                 {
                     total=Double.parseDouble(InPutText.getText());
@@ -1469,7 +1253,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     total=(total*22/7);
                     InPutText.setText(String.valueOf(total));
-
                 }
 
                 if(operator=="%")
@@ -1501,10 +1284,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
                     total=total-Double.parseDouble(InPutText.getText());
                     InPutText.setText(String.valueOf(total));
-
                 }
-
-
                 total=Math.acos(Math.toRadians(Double.parseDouble(InPutText.getText())));
                 InPutText.setText(String.valueOf(total));
             }
@@ -1524,14 +1304,12 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(String.valueOf(total));
 
                 }
-
                 if(operator=="%")
                 {
                     total=(total*Double.parseDouble(InPutText.getText()))/100;
                     InPutText.setText(String.valueOf(total));
 
                 }
-
                 if(operator=="+")
                 {
                     total=total+Double.parseDouble(InPutText.getText());
@@ -1556,8 +1334,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(String.valueOf(total));
 
                 }
-
-
                 total=Math.atan(Math.toRadians(Double.parseDouble(InPutText.getText())));
                 InPutText.setText(String.valueOf(total));
             }
@@ -1595,10 +1371,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
             public void actionPerformed(ActionEvent e) {
                 excount=excount-1;
                 OutPutText.setText(OutPutText.getText()+")");
-
-
-
-
             }
         });
         MPlusBtn.addActionListener(new ActionListener() {
@@ -1693,13 +1465,11 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(Integer.toHexString(Integer.parseInt(InPutText.getText())));
                 }
 
-
                 if(comboBox2.getSelectedItem()=="Binary"&&comboBox3.getSelectedItem()=="Decimal")
                 {
                     String val=InPutText.getText();
                     int vall=Integer.parseInt(val, 2);
                     InPutText.setText(Integer.toString(vall));
-
                 }
 
                 if(comboBox2.getSelectedItem()=="Binary"&&comboBox3.getSelectedItem()=="Octal")
@@ -1709,15 +1479,12 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(Integer.toString(vall));
 
                 }
-
                 if(comboBox2.getSelectedItem()=="Binary"&&comboBox3.getSelectedItem()=="Hexadecimal")
                 {
                     String val=InPutText.getText();
                     int vall=Integer.parseInt(val, 16);
                     InPutText.setText(Integer.toString(vall));
-
                 }
-
 
                 if(comboBox2.getSelectedItem()=="Octal"&&comboBox3.getSelectedItem()=="Binary")
                 {
@@ -1731,7 +1498,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     InPutText.setText(Long.toHexString(Long.parseLong(octalNo,8)));
 
                 }
-
 
                 if(comboBox2.getSelectedItem()=="Hexadecimal"&&comboBox3.getSelectedItem()=="Decimal")
                 {
@@ -1757,13 +1523,7 @@ public class Scientific_Calculator extends javax.swing.JFrame{
 
                     String oct = Integer.toOctalString(dec);
                     InPutText.setText(oct);
-
-
                 }
-
-
-
-
 
             }
         });
@@ -1835,17 +1595,10 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
 
-
-
-
-
                     powerx=Double.parseDouble(InPutText.getText());
                     OutPutText.setText(OutPutText.getText()+"^");
                     powerstate="open";
                 state = "op";
-
-
-
 
             }
         });
@@ -1913,9 +1666,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
              */
             public void actionPerformed(ActionEvent e) {
 
-
-
-
                 String file = "D:/formula.txt";
 
                 try {
@@ -1932,24 +1682,15 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     }
                     br.close();
 
-
-
-
-
-
-
                 } catch (IOException ee) {
                     System.out.println("ERROR: unable to read file " + file);
                     ee.printStackTrace();
                 }
-
                 try
                 {
                     Connection con = DB.getConnection();
                     Statement s = con.createStatement();
                     ResultSet r = con.createStatement().executeQuery("select * from formula");
-
-
                     while (r.next()) {
                         cmb_formula.addItem( r.getString(1));
                     }
@@ -1958,9 +1699,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                 {
 
                 }
-
-
-
             }
         });
 
@@ -1981,7 +1719,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     formula = fx.substring(fx.indexOf("=") + 1);
 
                     formula_state="a";
-
                 }
             }
         });
@@ -2018,8 +1755,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                     total=Double.parseDouble(calc(formula));
                     InPutText.setText(Double.toString(total));
                 }
-
-
             }
         });
         SaveBtn.addActionListener(new ActionListener() {
@@ -2031,8 +1766,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
             public void actionPerformed(ActionEvent e) {
                 if(cmb_source.getSelectedItem().toString().equals("Save in File"))
                 {
-
-
                     cmb_formula.addItem(formulaText.getText());
                     int itemcout=cmb_formula.getItemCount();
 
@@ -2044,8 +1777,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                             out.write(cmb_formula.getItemAt(i).toString());
                             out.write(System.getProperty("line.separator"));
                         }
-
-
                         out.close();
 
                     } catch (Exception ex) {
@@ -2066,22 +1797,13 @@ public class Scientific_Calculator extends javax.swing.JFrame{
                    }
 
                 }
-
-
-
-
-
-
                 }
         });
     }
 
-
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }
-
-
 
     public static void main(String[] args) {
 
@@ -2089,7 +1811,6 @@ public class Scientific_Calculator extends javax.swing.JFrame{
         Sc.setVisible(true);
         Sc.setSize(800,600);
         Sc.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
 
     }
 }
