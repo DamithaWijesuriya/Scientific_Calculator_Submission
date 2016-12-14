@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Scientific_Submission_Calculator.Scientific_Calculator">
+  <grid id="27dc6" binding="CalculatorJPanel" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="914" height="715"/>
+    </constraints>
+    <properties>
+      <font name="Microsoft JhengHei" style="1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="dfb63" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft JhengHei" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a2f3d" class="javax.swing.JButton" binding="PercentageBtn">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="%"/>
+            </properties>
+          </component>
+          <component id="5604f" class="javax.swing.JButton" binding="SevenBtn">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="7"/>
+            </properties>
+          </component>
+          <component id="58687" class="javax.swing.JButton" binding="EightBtn">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="8"/>
+            </properties>
+          </component>
+          <component id="ea1c7" class="javax.swing.JButton" binding="NineBtn">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="9"/>
+            </properties>
+          </component>
+          <component id="f1ca0" class="javax.swing.JButton" binding="DivisionBtn">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value=" ÷"/>
+            </properties>
+          </component>
+          <component id="3c69a" class="javax.swing.JButton" binding="DecimalPointBtn">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="."/>
+            </properties>
+          </component>
+          <component id="e865a" class="javax.swing.JButton" binding="MultiplicationBtn">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="×"/>
+            </properties>
+          </component>
+          <component id="48f44" class="javax.swing.JButton" binding="PlusOrMinusBtn">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="±"/>
+            </properties>
+          </component>
+          <component id="6627e" class="javax.swing.JButton" binding="SubstractionBtn">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="39dee" class="javax.swing.JButton" binding="SixBtn">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="6"/>
+            </properties>
+          </component>
+          <component id="64c4e" class="javax.swing.JButton" binding="AdditionBtn">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="+"/>
+            </properties>
+          </component>
+          <component id="d52bf" class="javax.swing.JButton" binding="FiveBtn">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="5"/>
+            </properties>
+          </component>
+          <component id="519f0" class="javax.swing.JButton" binding="FourBtn">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="4"/>
+            </properties>
+          </component>
+          <component id="dc024" class="javax.swing.JButton" binding="OneBtn">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="1"/>
+            </properties>
+          </component>
+          <component id="1530a" class="javax.swing.JButton" binding="TwoBtn">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="2"/>
+            </properties>
+          </component>
+          <component id="20ae4" class="javax.swing.JButton" binding="ThreeBtn">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="3"/>
+            </properties>
+          </component>
+          <component id="587e2" class="javax.swing.JButton" binding="EqualBtn">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="="/>
+            </properties>
+          </component>
+          <component id="3f1ef" class="javax.swing.JButton" binding="PiButton">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="π"/>
+            </properties>
+          </component>
+          <component id="bf656" class="javax.swing.JButton" binding="ZeroBtn">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c79cd" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft JhengHei" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="644db" class="javax.swing.JButton" binding="BBtn">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="B"/>
+            </properties>
+          </component>
+          <component id="d393f" class="javax.swing.JButton" binding="ABtn">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="A"/>
+            </properties>
+          </component>
+          <component id="15a0a" class="javax.swing.JButton" binding="CBtn">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="C"/>
+            </properties>
+          </component>
+          <grid id="45f07" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="d8d62" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Microsoft JhengHei" style="1"/>
+                </properties>
+                <border type="none" title=""/>
+                <children>
+                  <component id="fa118" class="javax.swing.JTextField" binding="FxText">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="32778" class="javax.swing.JLabel" binding="FxLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="F(x)=X"/>
+                    </properties>
+                  </component>
+                  <grid id="4fb67" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="85566" class="javax.swing.JComboBox" binding="cmb_formula">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value="-"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="23bbc" class="javax.swing.JButton" binding="LoadFomulaBtn">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Load Formula"/>
+                        </properties>
+                      </component>
+                      <component id="c3f03" class="javax.swing.JTextField" binding="formulaText">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="df61c" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Formula"/>
+                        </properties>
+                      </component>
+                      <component id="e5fed" class="javax.swing.JComboBox" binding="cmb_source">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <model>
+                            <item value="Save in Db"/>
+                            <item value="Save in File"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="af719" class="javax.swing.JButton" binding="SaveBtn">
+                        <constraints>
+                          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Save"/>
+                        </properties>
+                      </component>
+                      <component id="66385" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Enter in following format(y=a*b+c)"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="e0446" class="javax.swing.JLabel" binding="MemoryLbl">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Microsoft JhengHei" style="1"/>
+                  <text value="Memory"/>
+                </properties>
+              </component>
+              <component id="42665" class="javax.swing.JComboBox" binding="Memory">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <component id="f70fb" class="javax.swing.JButton" binding="Ebtn">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="E"/>
+            </properties>
+          </component>
+          <component id="e8cf9" class="javax.swing.JButton" binding="DBtn">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="D"/>
+            </properties>
+          </component>
+          <component id="fae03" class="javax.swing.JButton" binding="FBtn">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="F"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="d30cf" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft JhengHei" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="981aa" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value=""/>
+                <item value="Binary"/>
+                <item value="Decimal"/>
+                <item value="Octal"/>
+                <item value="Hexadecimal"/>
+              </model>
+            </properties>
+          </component>
+          <component id="2306b" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value=""/>
+                <item value="Binary"/>
+                <item value="Decimal"/>
+                <item value="Octal"/>
+                <item value="Hexadecimal"/>
+              </model>
+            </properties>
+          </component>
+          <component id="20740" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Input Type"/>
+            </properties>
+          </component>
+          <component id="6cffc" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Output Type"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="95f4f" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft JhengHei" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="98104" class="javax.swing.JTextField" binding="InPutText">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="2c90" class="javax.swing.JTextField" binding="OutPutText">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="63904" class="javax.swing.JLabel" binding="error">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="7d963" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft JhengHei" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ef8d4" class="javax.swing.JButton" binding="ClearBtn">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="C"/>
+            </properties>
+          </component>
+          <component id="1d96b" class="javax.swing.JButton" binding="CEButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="CE"/>
+            </properties>
+          </component>
+          <component id="10b46" class="javax.swing.JButton" binding="HistoryLogBtn">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="HistoryLog"/>
+            </properties>
+          </component>
+          <component id="54292" class="javax.swing.JButton" binding="GraphBtn">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="Graph"/>
+            </properties>
+          </component>
+          <component id="16deb" class="javax.swing.JButton" binding="MRBtn">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="MR"/>
+            </properties>
+          </component>
+          <component id="38acc" class="javax.swing.JButton" binding="MCBtn">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="MC"/>
+            </properties>
+          </component>
+          <component id="be7e5" class="javax.swing.JButton" binding="MPlusBtn">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="M+"/>
+            </properties>
+          </component>
+          <component id="cb289" class="javax.swing.JButton" binding="MMinusBtn">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="M-"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="489b6" class="javax.swing.JToolBar$Separator">
+        <constraints>
+          <grid row="2" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="fd7fe" class="javax.swing.JToolBar$Separator">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="abe0d" class="javax.swing.JToolBar$Separator">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="4012" class="javax.swing.JToolBar$Separator">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="f2619" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Number Conversion"/>
+        </properties>
+      </component>
+      <component id="335ac" class="javax.swing.JButton" binding="enterButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Enter"/>
+        </properties>
+      </component>
+      <grid id="aeba8" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft JhengHei" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6b36" class="javax.swing.JButton" binding="AsinBtn">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="Asin"/>
+            </properties>
+          </component>
+          <component id="40b6c" class="javax.swing.JButton" binding="SinBtn">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="Sin"/>
+            </properties>
+          </component>
+          <component id="fb0bf" class="javax.swing.JButton" binding="AcosBtn">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="Acos"/>
+            </properties>
+          </component>
+          <component id="6e45e" class="javax.swing.JButton" binding="AtanBtn">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="Atan"/>
+            </properties>
+          </component>
+          <component id="f8bbf" class="javax.swing.JButton" binding="CosBtn">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="Cos"/>
+            </properties>
+          </component>
+          <component id="bf659" class="javax.swing.JButton" binding="TanBtn">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="Tan"/>
+            </properties>
+          </component>
+          <component id="75162" class="javax.swing.JButton" binding="LnBtn">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="ln"/>
+            </properties>
+          </component>
+          <component id="28429" class="javax.swing.JButton" binding="CloseBracketBtn">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=")"/>
+            </properties>
+          </component>
+          <component id="7932f" class="javax.swing.JButton" binding="LogTenBtn">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="log"/>
+            </properties>
+          </component>
+          <component id="f1301" class="javax.swing.JButton" binding="OpenBracketBtn">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="("/>
+            </properties>
+          </component>
+          <component id="ac556" class="javax.swing.JButton" binding="nCrButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="nCr"/>
+            </properties>
+          </component>
+          <component id="df90f" class="javax.swing.JButton" binding="nPrButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="nPr"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="b35cd" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft JhengHei" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ba70c" class="javax.swing.JButton" binding="XToPowerTwoBtn">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="X^2"/>
+            </properties>
+          </component>
+          <component id="2b464" class="javax.swing.JButton" binding="SqrtXBtn">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="√x"/>
+            </properties>
+          </component>
+          <component id="bce7f" class="javax.swing.JButton" binding="XToPowerThreeBtn">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="X^3"/>
+            </properties>
+          </component>
+          <component id="e9a06" class="javax.swing.JButton" binding="ThreeSqRtXBtn">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="3√x"/>
+            </properties>
+          </component>
+          <component id="e9050" class="javax.swing.JButton" binding="OneOverXBtn">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="1/x"/>
+            </properties>
+          </component>
+          <component id="5b73b" class="javax.swing.JButton" binding="expbtn">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="e"/>
+            </properties>
+          </component>
+          <component id="9cf94" class="javax.swing.JButton" binding="xYButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft JhengHei" style="1"/>
+              <text value="X^Y"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
